@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css" />
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+</head>
+<body>
+  <div id="container" role="main">
+    <div id = "card1">
+      <div class="logo">
+        <img src="./images/icon-star.svg" alt="">
+      </div>
+      <div>
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!</p>
+      </div>
+      <div class="selector">
+        <button class="boton">1</button>           
+        <button class="boton">2</button>    
+        <button class="boton">3</button>    
+        <button class="boton">4</button>    
+        <button class="boton">5</button>
+      </div>
+      <div>    
+        <button class="btnenviar" type="submit">Submit</button>
+      </div>  
+    </div>
+    <div id="card2" class="ocultar">
+      <div class="conten">
+        <img src="./images/illustration-thank-you.svg" alt="">
+        <div class="btnsecond">
+          <p class="text">You selected <span> 0 </span> out of 5</p>
+        </div>
+        <h1>Thank you!</h1>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </p>
+      </div> 
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Abimael Tirado Uriarte</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>

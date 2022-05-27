@@ -1,0 +1,140 @@
+:root {
+    --orange: hsl(25, 97%, 53%);
+
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);    
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--veryDarkBlue);
+    display: grid;
+    font-family: 'Overpass', sans-serif;
+    height: 100vh;
+    place-items: center;
+}
+
+#container{
+    background: var(--darkBlue);
+    width: 22rem;
+    height: fit-content;
+    padding: 1.5rem;
+    border-radius: 1rem;    
+    box-shadow: 0.5em 0.5em rgba(0, 0, 0, 0.11);
+}
+
+.logo,.boton{
+    background-color: rgb(102, 101, 101, 0.2);
+    height: 7vh;
+    width: 7vh;
+    border-radius: 2.5rem;
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+}
+
+p{
+    color: var(--lightGrey);
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+}
+
+.selector{
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.boton{
+    border: none;
+    color: var(--lightGrey);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.boton:hover{
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.boton:active{
+    background-color: var(--lightGrey);
+    color: var(--white);
+}
+
+.btnenviar{
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+    font-weight: bold;
+    height: 7vh;
+    letter-spacing: 0.2rem;
+    margin: 0.5rem 0 0.7rem 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.btnenviar:hover{
+    background-color: white;
+    color: var(--orange);
+}
+
+/*Segunda pagina*/
+.conten{
+    display: grid;
+    margin-top: 0.4rem;
+    place-items: center;
+}
+
+.ocultar{
+    display: none;
+}
+
+.btnsecond{
+    background-color: rgb(102, 101, 101, 0.2);
+    border-radius: 2rem;
+    color: var(--white);
+    height: 6vh;
+    margin: 1.5rem 0 1rem 0;
+    width: 70%;
+}
+.text{
+    color: var(--orange);
+    text-align: center;
+    justify-items: center;
+    margin-top: 0.5rem;
+}
+.conten>p{
+    text-align: center;
+    margin-top: 0.4rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.37rem;
+    }
+}
+
